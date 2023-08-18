@@ -485,7 +485,9 @@
       if ($(window).scrollTop() > 200) {
         $("header").addClass("bg-white")
         $("header h1").addClass("primary")
-        $(".nav li a").addClass("text-secondary")
+        $("header h2").addClass("text-secondary")
+        $("header h2").removeClass("text-white")
+        $(".nav li a").addClass("t-gray")
         $(".nav li a").removeClass("text-white")
         $(".btt").fadeIn("bfixed")
 
@@ -493,13 +495,13 @@
       else {
         $("header").removeClass("bg-white")
         $("header h1").removeClass("primary")
-        $("header h2").removeClass("text-white")
-        $(".nav  li a").removeClass("text-secondary")
+        $("header h2").addClass("text-white")
+        $("header h2").removeClass("text-secondary")
+        $(".nav  li a").removeClass("t-gray")
         $(".nav li a").addClass("text-white")
         $(".btt").fadeOut("bfixed")
 
       }
-
     })
     $(window).load(function () {
       $(".l-box").fadeOut(2000)
